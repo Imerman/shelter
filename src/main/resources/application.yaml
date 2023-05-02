@@ -6,4 +6,6 @@ spring:
     username: root
     password: root.123
 
-
+#SERVER CONFIG
+server:
+  port: 8090
