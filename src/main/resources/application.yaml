@@ -5,7 +5,14 @@ spring:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/shelter
     username: root
     password: root.123
+#FLYWAY CONFIG
+  flyway:
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
 
 #SERVER CONFIG
 server:
   port: 8090
+
+
